@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 def weight_average(my_list=[]):
-    if len(my_list) is 0:
+    if my_list is None or len(my_list) <= 0:
         return 0
-    a = list(map(list, zip(*my_list)))
-    b = [x * y for x, y in zip(a[0], a[1])]
-    return sum(b) / sum(a[1])
+    weight = 0
+    sumtot = 0
+    for x, y in my_list:
+        weight += y
+        sumtot += y * x
+    return sumtot/weight
