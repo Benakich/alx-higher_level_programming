@@ -50,7 +50,7 @@ class Rectangle:
 
     def __repr__(self):
         """Returns repr of  rep of the class rectangle"""
-        string = "Rectangle(" + str(self.width) + "," + str(self.height) + ")"
+        string = "Rectangle(" + str(self.width) + ", " + str(self.height) + ")"
         return string
 
     def area(self):
