@@ -1,18 +1,18 @@
 #!/usr/bin/python3
-"""Defines a Rectangle class."""
+"""Defining a Rectangle class"""
 
 
 class Rectangle:
-    """rep a rectangle."""
+    """Defining the Rectangle class"""
 
     def __init__(self, width=0, height=0):
-        """Initialise Rectangle"""
+        """Initialising a rectangle class"""
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """width property function"""
+        """Defining width property"""
         return self.__width
 
     @width.setter
@@ -26,11 +26,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """height property function"""
+        """def height property"""
         return self.__height
 
-    @property
+    @height.setter
     def height(self, height):
+        """height setter"""
         if type(height) is not int:
             raise TypeError("height must be an integer")
         if height < 0:
