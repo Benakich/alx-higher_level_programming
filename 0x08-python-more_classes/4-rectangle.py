@@ -49,7 +49,7 @@ class Rectangle:
         return string
 
     def __repr__(self):
-        """str rep of rectangle"""
+        """Returns repr of  rep of the class rectangle"""
         string = "Rectangle(" + str(self.width) + "," + str(self.height) + ")"
         return string
 
